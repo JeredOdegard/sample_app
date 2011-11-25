@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
-# gem "pg", :group => :production
 gem 'sqlite3'
+gem 'jquery-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
@@ -12,6 +12,7 @@ end
 
 group :development do
 	gem 'rspec-rails'
+	gem "sqlite3-ruby", :require => "sqlite3"
 end
 
 group :test do 
@@ -24,4 +25,7 @@ group :test do
 	gem 'autotest-fsevent'
 end
 
-gem 'jquery-rails'
+group :production, :staging do
+  gem "pg"
+end
+
