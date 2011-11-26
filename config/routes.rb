@@ -7,4 +7,6 @@ SampleApp::Application.routes.draw do
   match "/about" => "pages#about"
   match "/contact" => "pages#contact"
   match "/help" => "pages#help"
+  
+  resources :users
 end
