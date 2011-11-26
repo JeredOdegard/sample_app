@@ -3,10 +3,20 @@
   <head>
 		<title><%= title %></title>
 		<%= csrf_meta_tag %>
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
 		<%= stylesheet_link_tag 'reset' %>
 		<%= stylesheet_link_tag 'style' %>
 	</head>
 	<body>
-		<%= yield %>
+		<div id="page">
+			<%= render 'layouts/header' %>
+			<section>
+				<%= yield %>
+			</section>
+			<%= render 'layouts/footer' %>
+		</div>
   </body>
 </html>
