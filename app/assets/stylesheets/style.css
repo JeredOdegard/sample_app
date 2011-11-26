@@ -10,3 +10,8 @@ nav ul li {
 h1 {
 	font-size: 2em;
 }
+
+.icon {
+	width: 25px;
+	height: 32px;
+}
