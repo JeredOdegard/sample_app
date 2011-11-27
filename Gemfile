@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 gem 'jquery-rails'
+gem 'gravatar_image_tag'
 
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
@@ -22,6 +23,7 @@ group :test do
 	gem 'autotest-rails-pure'
 	gem 'autotest-growl'
 	gem 'autotest-fsevent'
+	gem 'factory_girl_rails'
 end
 
 group :production, :staging do

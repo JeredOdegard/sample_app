@@ -1,17 +1,75 @@
 html {
-	background: #eee;
+	background: #fff;
 	font-size: 100%;
+	font-family: "Hevletica Neue", Helvetica, Arial, Sans-serif;
+}
+
+#page {
+	width: 960px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+#debug {
+	width: 400px;
+	margin: 0 auto;
+	background: #efefef;
+	
+	font-size: .75em;
+	font-family: Monaco, Courier, Serif;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	margin-top: 1em;
+	padding: 1em;
+}
+
+header {
+	position: relative;
+	height: 100px;
+}
+
+header nav {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	
+	width: 200px;
+	text-align: center;
+	margin: 1em auto;
+	background: #efefef;
+	padding: 1em;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 nav ul li {
 	display: inline;
 }
 
-h1 {
-	font-size: 2em;
+nav a {
+	text-decoration: none;
 }
 
-.icon {
-	width: 25px;
-	height: 32px;
+footer {
+	text-align: center;
+	margin: 1em auto;
+	background: #efefef;
+	padding: 1em;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+nav ul li {
+	padding: .5em;
+}
+
+h1 {
+	font-size: 2em;
 }
