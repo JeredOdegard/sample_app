@@ -11,16 +11,13 @@ html {
 }
 
 #debug {
-	width: 400px;
+	min-width: 400px;
 	margin: 0 auto;
-	background: #efefef;
+	background: #ddd;
+	border-top: 1px solid #bbb;
 	
 	font-size: .75em;
 	font-family: Monaco, Courier, Serif;
-	
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 	
 	margin-top: 1em;
 	padding: 1em;
@@ -72,4 +69,53 @@ nav ul li {
 
 h1 {
 	font-size: 2em;
+}
+
+form input {
+	outline: 0;
+	border: 1px solid #aaa;
+	padding: 3px;
+	margin: 3px auto;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.field_with_errors input {
+	border: 1px solid #e59999;
+}
+
+form input[type="submit"] {
+	background: green;
+	border: none;
+	color: #fff;
+	
+	padding: 6px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#error_explanation {
+	padding: 1em;
+	margin: 1em auto;
+	
+	background: #feebeb;
+	border-top: 1px solid #e59999;
+	
+	font-size: .85em;
+}
+
+#error_explanation ul {
+	list-style: square;
+}
+
+#error_explanation ul li {
+	margin-left: 2em;
+}
+
+.field {
+	margin: 1em auto;
 }
