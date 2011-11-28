@@ -33,23 +33,22 @@ header nav {
 	top: 0px;
 	right: 0px;
 	
-	width: 200px;
 	text-align: center;
 	margin: 1em auto;
+}
+
+nav ul li {
+	display: inline;
 	background: #efefef;
-	padding: 1em;
 	
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
 
-nav ul li {
-	display: inline;
-}
-
 nav a {
 	text-decoration: none;
+	padding: .5em;
 }
 
 footer {
