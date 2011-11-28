@@ -67,6 +67,14 @@ nav ul li {
 	padding: .5em;
 }
 
+nav ul li:hover {
+	background: #bbb;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
 h1 {
 	font-size: 2em;
 }
@@ -114,6 +122,21 @@ form input[type="submit"] {
 
 #error_explanation ul li {
 	margin-left: 2em;
+}
+
+.flash {
+	padding: 1em;
+	margin: 1em auto;
+}
+
+.success {
+	background: #d3ffd6;
+	border-top: 1px solid #68b86e;
+}
+
+.error {
+	background: #feebeb;
+	border-top: 1px solid #e59999;
 }
 
 .field {
