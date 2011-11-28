@@ -26,13 +26,6 @@ describe UsersController do
     end
   end
   
-  describe "GET 'sign_in'" do
-    it "should return http success" do
-      get :sign_in
-      response.should be_success
-    end
-  end
-  
   describe "POST 'create" do
     describe "failure" do
       before(:each) do

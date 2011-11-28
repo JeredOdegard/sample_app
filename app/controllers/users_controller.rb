@@ -12,19 +12,12 @@ class UsersController < ApplicationController
     @user = User.new(params[:user]) 
     if @user.save
         flash[:success] = "You've signed up! Congrats!"
+        sign_in @user
         redirect_to @user
     else
         @title = "Sign up"
         render 'new' 
     end
-  end
-  
-  def sign_in
-    @title = "Sign In"
-  end
-  
-  def sign_out
-    @title = "Sign Out"
   end
 
 end

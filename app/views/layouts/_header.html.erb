@@ -1,6 +1,10 @@
 <header>
 	<nav>
 		<ul>
-			<li><%= link_to 'Sign In', sign_in_path %></li>
+			<% if signed_in? %>
+				<li>Hey, <%= current_user.name %> <%= link_to 'Sign Out', signout_path, method: :delete %></li>
+			<% else %>
+				<li><%= link_to 'Sign In', signin_path %></li>
+			<% end %>
 	</nav>
 </header>
